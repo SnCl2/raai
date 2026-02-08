@@ -13,13 +13,14 @@ class SettingSeeder extends Seeder
     public function run(): void
     {
         $settings = [
-            ['key' => 'site_name', 'value' => 'Raai Website'],
+            ['key' => 'site_title', 'value' => 'Raai Logo Design'],
+            ['key' => 'seo_description', 'value' => 'Crafting unique brand identities.'],
             ['key' => 'contact_email', 'value' => 'contact@raaiwebsite.com'],
             ['key' => 'contact_phone', 'value' => '+91 1234567890'],
             ['key' => 'address', 'value' => '123, Creative Street, Design City, India'],
-            ['key' => 'facebook_link', 'value' => 'https://facebook.com'],
             ['key' => 'twitter_link', 'value' => 'https://twitter.com'],
             ['key' => 'instagram_link', 'value' => 'https://instagram.com'],
+            ['key' => 'linkedin_link', 'value' => 'https://linkedin.com'],
         ];
 
         foreach ($settings as $setting) {

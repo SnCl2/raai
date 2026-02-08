@@ -71,7 +71,7 @@
                 <div class="flex">
                     <div class="shrink-0 flex items-center">
                         <a href="{{ url('/') }}" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                            {{ $settings['site_name'] ?? config('app.name', 'Raai') }}
+                            {{ $settings['site_title'] ?? config('app.name', 'Raai') }}
                         </a>
                     </div>
                 </div>
