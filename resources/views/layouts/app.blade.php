@@ -115,9 +115,15 @@
                     <span class="text-gray-400">&copy; {{ date('Y') }} Raai Logo Design. All rights reserved.</span>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                    @if(isset($settings['twitter_link']))
+                        <a href="{{ $settings['twitter_link'] }}" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    @endif
+                    @if(isset($settings['instagram_link']))
+                        <a href="{{ $settings['instagram_link'] }}" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    @endif
+                    @if(isset($settings['linkedin_link']))
+                        <a href="{{ $settings['linkedin_link'] }}" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                    @endif
                 </div>
             </div>
         </div>
